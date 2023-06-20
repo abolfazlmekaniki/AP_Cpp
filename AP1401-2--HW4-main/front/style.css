@@ -1,0 +1,87 @@
+* {
+  padding: 0px;
+  margin: 0px; /* use universal selector to initialize padding and margin into zero  */
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./resources/11811.jpg"); /* here we set the width and height and background to html and body section and we also align the background image  */
+  background-position: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 90%;
+  height: 90%;
+  padding: 30px;
+  position: relative; /* set the position into relative in order to be able to change the childe's position which has absolute position   */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+  border-radius: 5px; /* round our section's corners  */
+  border: none;
+}
+
+table {
+  width: 100%;
+  color: aliceblue;
+}
+.align {
+  text-align: center;
+}
+
+table tr {
+  height: 50px;
+}
+tr:hover {
+  /* this chenges apply when mouse in over the tr's section  */
+  background-color: rgba(211, 211, 211, 0.326);
+  color: black;
+}
+
+button {
+  text-align: center;
+  margin-top: 15px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  outline: none;
+  cursor: pointer; /* when mouse goes on buttons it's icon will change  to pointer  */
+}
+
+li,
+h1 {
+  color: lightgray;
+  margin-bottom: 20px;
+}
+.btn_div {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* display : flex helps us to set the childs together and put them in an arrange order */
+  align-items: center;
+  gap: 10px;
+  right: 0%;
+  top: 50%;
+  background-color: inherit;
+  flex-direction: row;
+}
+.button_ {
+  width: 40%;
+  height: 20%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
